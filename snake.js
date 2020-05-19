@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
  
     
     var keys = [];
@@ -219,6 +219,7 @@ function touchToKeyCode(x, y) {
         else if (key == "40" && d != "up") {down.play();d = "down";}
         
     })
+
     function leave(){
       alert("Press OK to Continue");
     }
