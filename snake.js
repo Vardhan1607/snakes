@@ -131,7 +131,7 @@ false);
         snake_array.unshift(tail); 
         for (var i = 0; i < snake_array.length; i++) {
             var c = snake_array[i];
-           ctx.fillStyle = ( i==0 ) ? "#fb2b11":"#15f4ee";
+           ctx.fillStyle = ( i==0 ) ? "white":"#15f4ee";
            ctx.fillRect(c.x*cw, c.y*cw, cw, cw);
         }
 
@@ -146,7 +146,7 @@ false);
 
     
     function paint_food(x,y){
-      ctx.fillStyle = "red";
+      ctx.fillStyle = "#fb2b11";
         ctx.fillRect(x * cw, y * cw, cw, cw);
     }
     function check_collision(x, y, array) {
