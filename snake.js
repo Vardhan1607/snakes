@@ -8,12 +8,12 @@ $(document).ready(function() {
     let right= new Audio();
     let up= new Audio();
     let down= new Audio();
-    dead.src = "assets/dead.mp3";
-    eat.src = "assets/eat.mp3";
-    up.src = "assets/up.mp3";
-    right.src = "assets/right.mp3";
-    left.src = "assets/left.mp3";
-    down.src = "assets/down-2.mp3";
+    dead.src = "dead.mp3";
+    eat.src = "eat.mp3";
+    up.src = "up.mp3";
+    right.src = "right.mp3";
+    left.src = "left.mp3";
+    down.src = "down-2.mp3";
   
     
 window.addEventListener("keydown",
