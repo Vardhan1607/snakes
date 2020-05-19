@@ -132,7 +132,7 @@ false);
         for (var i = 0; i < snake_array.length; i++) {
             var c = snake_array[i];
            ctx.fillStyle = ( i==0 ) ? "white":"blue";
-        ctx.fillRect(x * cw, y * cw, cw, cw);
+           ctx.fillRectc.(x * cw, c.y * cw, cw, cw);
         }
 
         
