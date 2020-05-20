@@ -159,13 +159,17 @@ audio{
 		<use xlink:href="#s-text" class="text-copy"></use>
 	</g>
 </svg>
-<audio controls autoplay>	 
+<audio id="myAudio" controls autoplay>	 
 	<source src="audio/salamisound-1953981-bubbling-brook-rapids-long.mp3" type="audio/mpeg" >
 	</audio>
 
 <div class="box">
   <a href="snakegame.html" class="btn btn-white btn-animation-1">Go to The Game</a> 
 </div>
-
+      <script>
+window.onload = function() {
+    document.getElementById("myAudio").play();
+}
+	</script>
 </body>
 </html>
