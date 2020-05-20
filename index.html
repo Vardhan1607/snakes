@@ -140,7 +140,7 @@ svg {
     transform:translateY(0);
   }
 }
-audio{
+.myAudio{
 	opacity:0;
 	}
 </style>
@@ -159,16 +159,14 @@ audio{
 		<use xlink:href="#s-text" class="text-copy"></use>
 	</g>
 </svg>
-<audio id="myAudio" src="audio/salamisound-1953981-bubbling-brook-rapids-long.mp3" loop="loop">
+<audio class="myAudio">
+	<source src="audio/salamisound-1953981-bubbling-brook-rapids-long.mp3" loop="loop" autoplay="autoplay">
 	</audio>
 
 <div class="box">
   <a href="snakegame.html" class="btn btn-white btn-animation-1">Go to The Game</a> 
 </div>
-      <script>
-window.onload = function() {
-    document.getElementById("myAudio").play();
-}
-	</script>
+
+
 </body>
 </html>
