@@ -77,9 +77,6 @@ position:fixed;
 .custom-select {
   position: relative;
   font-family: Arial;
-
-margin-bottom:100px;
-	display:block;
 }
 
 .custom-select select {
@@ -137,17 +134,18 @@ margin-bottom:100px;
 </style>
 
 <div class="bg">
-	<h1 style="color:white;text-align:center">WELCOME TO THE SNAKE GAME</h1>
-<canvas id="canvas" width="450" height="450"></canvas><br />
-<button class="pause" onclick="leave()">Pause</button>
-
+	
 <div class="custom-select" style="width:200px;margin-left:20px;">
 <select id="selectMode">
 	<option value="75">Select Mode:</option>
   <option  value="100">Easy</option>
   <option value="75">Medium</option>
   <option value="50">Hard</option>
-	<option value="20">Impossible</option> </select></div><br>
+	<option value="20">Impossible</option> </select></div>
+	<h1 style="color:white;text-align:center">WELCOME TO THE SNAKE GAME</h1>
+<canvas id="canvas" width="450" height="450"></canvas><br />
+<button class="pause" onclick="leave()">Pause</button>
+
 <script>
 var x, i, j, selElmnt, a, b, c;
 
