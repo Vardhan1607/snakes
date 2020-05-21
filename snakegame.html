@@ -117,7 +117,6 @@ position:fixed;
 
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
   top: 100%;
   left: 0;
   right: 0;
@@ -129,7 +128,22 @@ position:fixed;
   display: none;
 }
 
-
+.select-items:nth-child(1){
+	background-color:#669900;}
+.select-items:nth-child(2){
+	background-color:#ffcc00;}
+.select-items:nth-child(3){
+	background-color:#ff9933;}
+.select-items:nth-child(4){
+	background-color:red;}
+.select-items:nth-child(1):hover{
+              opacity:0.8;}
+.select-items:nth-child(2):hover{
+	opacity:0.8;}
+.select-items:nth-child(3):hover{
+	opacity:0.8;}
+.select-items:nth-child(4):hover{
+	opacity:0.8;}
 
 </style>
 
@@ -139,7 +153,7 @@ position:fixed;
 <button class="pause" onclick="leave()">Pause</button>
 
 <div class="custom-select" style="width:200px;">
-<div><select  id="selectMode">
+<select id="selectMode">
   <option  value="100">Easy</option>
   <option value="75">Medium</option>
   <option value="50">Hard</option>
