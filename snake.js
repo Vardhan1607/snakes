@@ -1,3 +1,6 @@
+$(document).ready(function() {
+ 
+    
     var keys = [];
     let dead = new Audio();
     let eat = new Audio();
@@ -5,7 +8,6 @@
     let right= new Audio();
     let up= new Audio();
     let down= new Audio();
-    let d="RIGHT";
     dead.src = "audio/dead.mp3";
     eat.src = "audio/eat.mp3";
     up.src = "audio/up.mp3";
@@ -29,8 +31,6 @@ window.addEventListener('keyup',
         keys[e.keyCode] = false;
     },
 false);
-
-
     var canvas = $("#canvas")[0];
     var ctx = canvas.getContext("2d");
     var w = $("#canvas").width();
@@ -83,7 +83,7 @@ false);
         
     }
      const foodImg = new Image();
-     foodImg.src = "assets/food.png";
+     foodImg.src = "img/food.png";
    
 
     function paint() {
@@ -129,7 +129,7 @@ false);
         
         snake_array.unshift(tail); 
         for (var i = 0; i < snake_array.length; i++) {
-            var c = snake_array[i];
+           var c = snake_array[i];
            ctx.fillStyle = ( i==0 ) ? "white":"#15f4ee";
            ctx.fillRect(c.x*cw, c.y*cw, cw, cw);
         }
@@ -143,9 +143,10 @@ false);
         ctx.fillText(score_text, 5, h - 5);
     }
 
+  
     
     function paint_food(x,y){
-      ctx.fillStyle = "#fb2b11";
+      ctx.fillStyle = "red";
         ctx.fillRect(x * cw, y * cw, cw, cw);
     }
     function check_collision(x, y, array) {
@@ -168,9 +169,9 @@ false);
         else if (key == "40" && d != "up") {down.play();d = "down";}
         
     })
+})
 
-    function leave(){
-      alert("Press OK to Continue");
-    }
-
+function leave(){
+  alert("Press OK to continue");
+}
 
