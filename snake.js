@@ -1,6 +1,3 @@
-
- 
-    
     var keys = [];
     let dead = new Audio();
     let eat = new Audio();
@@ -8,6 +5,7 @@
     let right= new Audio();
     let up= new Audio();
     let down= new Audio();
+    let d="RIGHT";
     dead.src = "audio/dead.mp3";
     eat.src = "audio/eat.mp3";
     up.src = "audio/up.mp3";
@@ -17,7 +15,7 @@
   
     
 window.addEventListener("keydown",
-    function(e){
+    function move(e){
         keys[e.keyCode] = true;
         switch(e.keyCode){
             case 37: case 39: case 38:  case 40: 
@@ -26,11 +24,39 @@ window.addEventListener("keydown",
         }
     },
 false);
-window.addEventListener('keyup',
+window.addEventListener('keyup',move)
     function(e){
         keys[e.keyCode] = false;
     },
 false);
+document.addEventListener("touchstart", init);
+document.addEventListener("touchmove", );
+
+document.getElementById("moveup").addEventListener("click", function(event){
+    if (d != "DOWN"){
+        up.play();
+        d = "UP";
+    }
+});
+document.getElementById("movedown").addEventListener("click", function(event){
+    if (d != "UP"){
+        down.play();
+        d = "DOWN";
+    }
+});
+document.getElementById("moveleft").addEventListener("click", function(event){
+    if (d != "RIGHT"){
+        left.play();
+        d = "LEFT";
+    }
+});
+document.getElementById("moveright").addEventListener("click", function(event){
+    if (d != "LEFT"){
+        right.play();
+        d = "RIGHT";
+    }
+});
+
 
     var canvas = $("#canvas")[0];
     var ctx = canvas.getContext("2d");
