@@ -15,7 +15,7 @@
   
     
 window.addEventListener("keydown",
-    function move(e){
+    function(e){
         keys[e.keyCode] = true;
         switch(e.keyCode){
             case 37: case 39: case 38:  case 40: 
@@ -24,7 +24,7 @@ window.addEventListener("keydown",
         }
     },
 false);
-window.addEventListener('keyup',move)
+window.addEventListener('keyup',
     function(e){
         keys[e.keyCode] = false;
     },
