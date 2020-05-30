@@ -24,6 +24,11 @@ window.addEventListener("keydown",
         }
     },
 false);
+window.addEventListener('keyup',
+    function(e){
+        keys[e.keyCode] = false;
+    },
+false);
 
 
     var canvas = $("#canvas")[0];
