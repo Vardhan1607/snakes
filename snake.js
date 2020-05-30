@@ -24,38 +24,6 @@ window.addEventListener("keydown",
         }
     },
 false);
-window.addEventListener('keyup',
-    function(e){
-        keys[e.keyCode] = false;
-    },
-false);
-document.addEventListener("touchstart", init);
-document.addEventListener("touchmove", );
-
-document.getElementById("moveup").addEventListener("click", function(event){
-    if (d != "DOWN"){
-        up.play();
-        d = "UP";
-    }
-});
-document.getElementById("movedown").addEventListener("click", function(event){
-    if (d != "UP"){
-        down.play();
-        d = "DOWN";
-    }
-});
-document.getElementById("moveleft").addEventListener("click", function(event){
-    if (d != "RIGHT"){
-        left.play();
-        d = "LEFT";
-    }
-});
-document.getElementById("moveright").addEventListener("click", function(event){
-    if (d != "LEFT"){
-        right.play();
-        d = "RIGHT";
-    }
-});
 
 
     var canvas = $("#canvas")[0];
